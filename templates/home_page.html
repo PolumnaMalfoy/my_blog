@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Personal blog</h1>
+    {% for article in articles %}
+    <h5><a href="/article/{{article.id}}">{{article.title}} -  {{article.published_time}}</a></h5>
+
+    {% endfor %}
+</body>
+</html>
+
+
+
+
+
+

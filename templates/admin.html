@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Personal blog <a style="fontsize: 15px; color: light-green" href="/new-article/">+Add</a></h1>
+    {% for article in articles %}
+    <h5>{{article.title}}/ <a style="clor:grey" href="/edit-article/{{ article.id}}">Edit</a> / <a style="color:grey" href="/delete-article/{{ article.id}}">Delete</a></h5>
+
+    {% endfor %}
+</body>
+</html>
+
+
+
+
+
+
